@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta keywords="Warnings" content="Social, Technologies, Tecnologias, Informacion"/>
+    <title>Social Technologies</title>
+
+    <!-- Enlaces a hojas de estilo -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Imagenes/Logo.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=New+Amsterdam&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="Imagenes/Logo.png" alt="Logo de Social Technologies">
+        </div>
+        <nav class="nav-links">
+            <a class="Tendencias" href="#" aria-label="Ir a Tendencias">Tendencias</a>
+            <a class="Computadoras" href="#" aria-label="Ir a Computadoras">Computadoras</a>
+            <a class="Moviles" href="#" aria-label="Ir a Móviles">Móviles</a>
+            <a class="IA" href="#" aria-label="Ir a IA">IA</a>
+        </nav>
+        <div class="user-icon">
+            <img src="Imagenes/Usuario.png" alt="Icono de Usuario">
+        </div>
+    </header>
+
+    <!-- Carrusel -->
+    <div class="container">
+        <div class="container-carrusel">
+            <div class="carrusel">
+                <div class="arrow left" onclick="prevSlide()">&#10094;</div>
+                <div class="content">
+                    <div class="info">
+                        <h2>IPhone 16</h2>
+                        <p>Nuevo Lanzamiento de la marca Apple</p>
+                        <button>Más información aquí</button>
+                    </div>
+                    <div class="video">
+                        <video src="Videos/Iphone.mp4" controls autoplay muted playsinline loop></video>
+                    </div>
+                </div>
+                <div class="arrow right" onclick="nextSlide()">&#10095;</div>
+            </div>
+            <div class="dots">
+                <span class="dot" onclick="setCurrentSlide(0)"></span>
+                <span class="dot" onclick="setCurrentSlide(1)"></span>
+                <span class="dot" onclick="setCurrentSlide(2)"></span>
+                <span class="dot" onclick="setCurrentSlide(3)"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de novedades -->
+    <div class="novedades1">
+        <h1>Tendencias</h1>
+    </div>
+    <div class="subtitulos-container">
+        <div class="novedades2">
+            <h2>¿Por qué el IPhone 16 destaca tanto?</h2>
+        </div>
+        <div class="text-above-image">
+            <h2>¿Quieres verlo más de cerca?</h2>
+        </div>
+    </div>
+
+    <!-- Información sobre el iPhone 16 -->
+    <div class="container-info">
+        <div class="container-I16">
+            <ul class="list-I16">
+                <li>Pantalla más grande: Ahora con biseles más delgados, el 90% del frontal es pantalla, ofreciendo una experiencia más inmersiva.</li>
+                <li>Material premium: Utiliza titanio de grado 5 en sus bordes, lo que mejora la resistencia y le da un acabado más sofisticado.</li>
+                <li>Botón de acción: El nuevo "Control de Cámara" permite accesos directos a funciones como cámara, linterna o atajos personalizados.</li>
+            </ul>
+            <p class="text-I16">
+                Precios: Desde $4,093,000 COP (128 GB) hasta $5,713,000 COP (512 GB).
+            </p>
+        </div>
+        <div class="container-image">
+            <div class="image-container">
+                <img src="Imagenes/green.png" alt="IPhone 16 Plus de 6.7' y IPhone 16 de 6.1'" class="iphone-image">
+            </div>
+            <div class="text-below-image">
+                <p>iPhone 16 Plus de 6,7”2 y iPhone 16 de 6,1”2 en color Verde azulado</p>
+            </div>
+            <div class="color-options">
+                <div class="color-circle" style="background-color: #008080;"></div>
+                <div class="color-circle" style="background-color: #DBDBD9;"></div>
+                <div class="color-circle" style="background-color: #D09ABE;"></div>
+                <div class="color-circle" style="background-color: #4273B8;"></div>
+                <div class="color-circle" style="background-color: #404040;"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Información adicional (Samsung Z Fold6) -->
+    <div class="infor">
+        <h2>¿No termina de convencer?</h2>
+    </div>
+    <div class="selecciones">
+        <h3>Las mejores selecciones para ti empiezan ahora</h3>
+    </div>
+    <div class="container-informacion">
+        <p>
+            El Samsung Z Fold6 ofrece un rendimiento excelente en juegos como Genshin Impact y Call of Duty: Mobile, con tiempos de carga rápidos y gráficos fluidos. 
+            Aunque el throttling reduce el rendimiento tras sesiones largas. Su construcción con Gorilla Glass Victus 2 y aluminio lo hace más resistente, además de conectividad 5G y Wi-Fi 7, ofrece una experiencia ultrarrápida en juegos y aplicaciones.
+        </p>
+    </div>
+
+    <!-- Título de Presentaciones -->
+    <h2 class="presentacion-titulo">Presentaciones</h2>
+
+    <!-- Contenedor principal de la imagen y los colores -->
+    <div class="imag-container">
+        <img src="Imagenes/SamPlateado.png" alt="Samsung Plateado" class="Samsung-image">
+        <p class="modelo-texto">Samsung Z Fold6 - Plateado Metálico</p>
+        <div class="colors-options">
+            <div class="colors-circles" style="background-color: #7F7F7E;"></div>
+            <div class="colors-circles" style="background-color: #F0DBE1;"></div>
+            <div class="colors-circles" style="background-color: #485167;"></div>
+            <div class="colors-circles" style="background-color: #454646;"></div>
+        </div>
+    </div>
+    <div class="section-contenido">
+        <h2>Diseño único y duradero, inspirado en la naturaleza</h2>
+        <h3>ASUS Zenbook S OLED UM5606WA</h3>
+        
+        <div class="contenido-bloque">
+            <img src="Imagenes/Asus.jpg" alt="Imagen Zenbook" class="contenido-imagen">
+            <p class="contenido-texto">
+                La ASUS Zenbook S16 se concibe por su diseño ultradelgado y liviano, lo que la convierte en una opción excelente para aquellos que buscan portabilidad sin sacrificar potencia.
+            </p>
+            <p class="subtexto">
+                Su construcción en Ceramium resistente al desgaste y al agua de salinidad le aporta un toque único y mayor duración al tacto
+            </p>
+            <hr class="separador">
+        </div>
+        
+        <div class="contenido-bloque">
+            <img src="Imagenes/Oled.jpg" alt="Pantalla OLED" class="contenido-imagen">
+            <p class="contenido-texto">
+                En cuanto a la pantalla, la luminosa OLED 3K de 16 pulgadas y 3D-like proporciona una experiencia visual impresionante con colores más vibrantes y detalles nítidos.
+            </p>
+            <p class="subtexto">
+                Ideal tanto para consumir contenido como para trabajos gráficos intensivos
+            </p>
+            <hr class="separador">
+        </div>
+    </div>
+    <div class="mujer-computador">
+        <img src="Imagenes/Audio.jpg" alt="Mujer usando computador" class="imagen-mujer">
+        <p class="texto-descriptivo">
+            El hardware inteligente es cada vez más capaz, ahora con cámaras conectadas que permiten realizar videollamadas desde una pantalla independiente. Además, puedes disfrutar de servicios de streaming, desde Netflix hasta YouTube, haciendo la multitarea mucho más fluida y fácil.
+        </p>
+    </div>
+    
+    <div class="section-ia">
+        <h2>¿Qué hay de nuevo en las IA más relevantes?</h2>
+        
+        <div class="ia-informacion">
+            <h3>Acceso y Funcionalidad</h3>
+            <ul>
+                <li>Acceso en la Web: Además de las aplicaciones móviles, puedes acceder a Meta AI desde la página web, lo que facilita el uso en distintos dispositivos y contextos.</li>
+                <li>Guardar Conversaciones: Los usuarios pueden iniciar sesiones y guardar sus interacciones con Meta AI, lo que permite consultar conversaciones anteriores y facilita el seguimiento de temas importantes.</li>
+            </ul>
+    
+            <h3>Integración en Aplicaciones</h3>
+            <ul>
+                <li>Integración en Redes Sociales: Meta AI está integrada en las funciones de búsqueda de Facebook, Instagram, WhatsApp y Messenger, esto permite a los usuarios obtener información en tiempo real sin salir de la aplicación.</li>
+                <li>Interacción Contextual: Mientras revisas publicaciones en el feed de Facebook, puedes hacer preguntas específicas a Meta AI sobre el tema que ves. Por ejemplo, si encuentras un artículo sobre un evento turístico, puedes preguntarle a Meta AI sobre la mejor época para visitarlo.</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Empieza aqui el desastre de Gamez -->
+    <div class="container23">
+        <!-- Encabezado con las tarjetas -->
+        <div class="cards">
+            <div class="card">
+                <p class="UserG">
+                    <strong>
+                        Creador
+                    </strong>
+                </p>
+                <p>Deberíamos partir de las mayores tendencias...</p>
+                <p class="Juan">
+                    <strong>
+                        Juan Rodríguez
+                    </strong>
+                </p>
+            </div>
+            <div class="card">
+                <p class="UserG">
+                    <strong>
+                        Creador
+                    </strong>
+                </p>
+                <p>Si mejor tomamos temas más relevantes...</p>
+                <p class="Gamez"><strong>Andrés Gámez</strong></p>
+            </div>
+            <div class="card">
+                <p class="UserG">
+                    <strong>
+                        Creador
+                    </strong>
+                </p>
+                <p>
+                    Ey, pero los móviles tienen mayor ventaja sobre los...
+                </p>
+                <p class="Cristhian">
+                    <strong>Christian Cuadros</strong>
+                </p>
+            </div>
+            <div class="card">
+                <p class="UserG">
+                    <strong>
+                        Creador
+                    </strong>
+                </p>
+                <p>La moda son las
+                    inteligencias artificiales mejor empecemos por ahí...</p>
+                <p class="Dario"><strong>Ruben Dario</strong></p>
+            </div>
+        </div>
+
+        <!-- Pregunta -->
+        <div class="question">
+            <h2>¿Se pondrán de acuerdo alguna vez?</h2>
+            <p>Aunque eso no importa... ¿tú tienes tu respuesta, no?</p>
+        </div>
+
+        <!-- Imagenes de opciones (PC, Móviles, IA) -->
+        <div class="options">
+            <div class="option">
+                <img src="Imagenes/Asus.jpg" alt="PC">
+                <p >
+                    PC
+                </p>
+            </div>
+            <div class="option">
+                <div class="MovilPNG">
+                    <img src="Imagenes/green.png" alt="Móviles">
+                    <p >
+                        Móviles
+                    </p>
+                </div>
+            </div>
+            <div class="option">
+                    <img src="Imagenes/Meta.png" alt="IA"class="MetaPNG">
+                <p >
+                    IA
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Creditos -->
+
+    <div class="creditos">
+        <p>
+            <div class="logo1">
+                <img src="Imagenes/LogoNegro.png" alt="Logo de Social Technologies">
+            </div>
+            <div class="creditosTexto">
+                @NonCopyrightIntented
+            </div>
+            <div class="creditosTexto">
+                Made by TopWorkers
+            </div>
+        </p>
+    </div>
+    <!-- Enlace al archivo de JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
