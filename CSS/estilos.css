@@ -54,6 +54,25 @@ display: flex;
    
     margin-top: 14px;
 }
+
+.profile-icon {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+background-color: white;
+
+height: 50px;
+width: 50px;
+border-radius: 50%;
+
+
+}
+
+
+.fa-user{
+    color:black;
+}
 .menu-icon, .profile-icon {
     font-size: 24px;
     cursor: pointer;
