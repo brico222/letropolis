@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letropolis</title>
+    <link rel="stylesheet" href="/CSS/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- cabecera -->
+    <header>
+        <div class="header-background">
+            <div class="header-content">
+                <div class="menu-icon" onclick="toggleNav()">☰</div>
+
+                <div class="filter-center">
+                    <img src="/FUENTES/IMAGENES/logo.svg" alt="Logo de Letropolis" class="logo">
+                    <div class="search-bar">
+                        <div class="filter-buttons">
+                            <button>Todos</button>
+                            <button>Libros</button>
+                            <button>AudioLibros</button>
+
+
+                            <div class=" search-cotainer"> 
+
+                                <input class="search-input" type="text" placeholder="Buscar..." />
+                                <button class="search-icon">
+
+
+                                    <i class="fa-solid fa-magnifying-glass"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="profile-icon"><i class="fa-solid fa-user"></i></div>
+            </div>
+    </header>
+
+    <!-- Panel de navegación -->
+    <div class="side-nav" id="sideNav">
+        <div class="profile-section">
+            <img src="/FUENTES/IMAGENES/foto_perfil.jpeg" alt="Foto de perfil" class="profile-pic">
+            <h2>CAROLINA</h2>
+            <p>carolina@gmail.com</p>
+        </div>
+        <ul class="nav-links">
+            <li><span class="icon" onclick="toggleNav()">🏠</span> Home</li>
+            <li><span class="icon">👤</span> Mi perfil</li>
+            <li><span class="icon">🔖</span> Marcadores</li>
+            <li><span class="icon">📚</span> Libros guardados</li>
+        </ul>
+        <div class="logout">
+            <span class="icon">↩️</span> Salir
+        </div>
+    </div>
+
+
+    <main>
+
+
+        <div class="libros_filtro">
+            <h2>Libros/Audiolibros</h2>
+            <i class="fas fa-filter filter-icon"></i>
+        </div>
+
+        <div class="book-grid">
+
+            <!--Primera fila-->
+
+            <div class="book-item">
+                <img src="/FUENTES/IMAGENES/portadas_libros/cruce_de_caminos.svg" alt="Cruce de caminos">
+                <p class="book-title">Cruce de caminos</p>
+                <p class="book-genre">Ficción</p>
+            </div>
+
+            <div class="book-item">
+                <img src="/FUENTES/IMAGENES/portadas_libros/reyes_caidos.svg" alt="reyes_caidos">
+                <p class="book-title">Reyes Caidos</p>
+                <p class="book-genre">Fantasía</p>
+            </div>
+
+            <div class="book-item">
+                <img src="/FUENTES/IMAGENES/portadas_libros/hastaqueelveranoacabe.svg" alt="hasta que el verano acabe">
+                <p class="book-title">Hasta que el verano acabe</p>
+                <p class="book-genre">Romance</p>
+            </div>
+
+            <div class="book-item">
+                <img src="/FUENTES/IMAGENES/portadas_libros/elvisitante.svg" alt="El visitante">
+                <p class="book-title">El visitante</p>
+                <p class="book-genre">Terror</p>
+            </div>
+
+            <div class="book-item">
+                <img src="/FUENTES/IMAGENES/portadas_libros/juegodetronos.svg" alt="Juego de tronos">
+                <p class="book-title">Juego de tronos</p>
+                <p class="book-genre">Novela/Fantasía</p>
+            </div>
+
+            <div class="book-item">
+                <img src="/FUENTES/IMAGENES/portadas_libros/lasvidasdentrodetucabeza.svg"
+                    alt="las vidas dentro de tu cabeza">
+                <p class="book-title">Las vidas dentro de tu cabeza</p>
+                <p class="book-genre">Autoayuda</p>
+            </div>
+
+            <div class="book-item">
+                <img src="/FUENTES/IMAGENES/portadas_libros/losjuiciosdesalem.svg" alt="Los juicios de salem">
+                <p class="book-title">Los juicios de salem</p>
+                <p class="book-genre">Drama</p>
+            </div>
+
+            <!--Borrador-->
+
+            <div class="book-item">
+                <img src="/FUENTES/IMAGENES/portadas_libros/cruce_de_caminos.svg" alt="Cruce de caminos">
+                <p class="book-title">Cruce de caminos</p>
+                <p class="book-genre">Ficción</p>
+            </div>
+
+            <div class="book-item">
+                <img src="/FUENTES/IMAGENES/portadas_libros/reyes_caidos.svg" alt="reyes_caidos">
+                <p class="book-title">Reyes Caidos</p>
+                <p class="book-genre">Fantasía</p>
+            </div>
+
+            <div class="book-item">
+                <img src="/FUENTES/IMAGENES/portadas_libros/hastaqueelveranoacabe.svg" alt="hasta que el verano acabe">
+                <p class="book-title">Hasta que el verano acabe</p>
+                <p class="book-genre">Romance</p>
+            </div>
+
+            <div class="book-item">
+                <img src="/FUENTES/IMAGENES/portadas_libros/elvisitante.svg" alt="El visitante">
+                <p class="book-title">El visitante</p>
+                <p class="book-genre">Terror</p>
+            </div>
+
+            <div class="book-item">
+                <img src="/FUENTES/IMAGENES/portadas_libros/juegodetronos.svg" alt="Juego de tronos">
+                <p class="book-title">Juego de tronos</p>
+                <p class="book-genre">Novela/Fantasía</p>
+            </div>
+
+            <div class="book-item">
+                <img src="/FUENTES/IMAGENES/portadas_libros/lasvidasdentrodetucabeza.svg"
+                    alt="las vidas dentro de tu cabeza">
+                <p class="book-title">Las vidas dentro de tu cabeza</p>
+                <p class="book-genre">Autoayuda</p>
+            </div>
+
+            <div class="book-item">
+                <img src="/FUENTES/IMAGENES/portadas_libros/losjuiciosdesalem.svg" alt="Los juicios de salem">
+                <p class="book-title">Los juicios de salem</p>
+                <p class="book-genre">Drama</p>
+            </div>
+
+            <div class="book-item">
+                <img src="/FUENTES/IMAGENES/portadas_libros/cruce_de_caminos.svg" alt="Cruce de caminos">
+                <p class="book-title">Cruce de caminos</p>
+                <p class="book-genre">Ficción</p>
+            </div>
+
+            <div class="book-item">
+                <img src="/FUENTES/IMAGENES/portadas_libros/elvisitante.svg" alt="El visitante">
+                <p class="book-title">El visitante</p>
+                <p class="book-genre">Terror</p>
+            </div>
+
+            <div class="book-item">
+                <img src="/FUENTES/IMAGENES/portadas_libros/lasvidasdentrodetucabeza.svg"
+                    alt="las vidas dentro de tu cabeza">
+                <p class="book-title">Las vidas dentro de tu cabeza</p>
+                <p class="book-genre">Autoayuda</p>
+            </div>
+
+            <div class="book-item">
+                <img src="/FUENTES/IMAGENES/portadas_libros/reyes_caidos.svg" alt="reyes_caidos">
+                <p class="book-title">Reyes Caidos</p>
+                <p class="book-genre">Fantasía</p>
+            </div>
+
+
+
+        </div>
+    </main>
+
+    <script src="/JAVASCRIPT/script.js"></script>
+</body>
+
+</html>
+</body>
+
+</html>

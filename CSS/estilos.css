@@ -1,0 +1,284 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+
+}
+
+
+
+/* Header */
+header {
+    position: relative;
+}
+
+.header-background {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/FUENTES/IMAGENES/fondo_libros.svg'); /* Reemplaza con la ruta de la imagen de fondo */
+    background-size: contain;
+    background-position: center;
+    padding: 25px 0;
+  
+}
+
+.header-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    padding:  0 25px;
+    
+   
+}
+
+
+.filter-center{
+
+  
+display: flex;
+    width:800px;
+    align-items: center;
+    justify-content: space-around;
+    gap:64px;
+
+}
+
+
+.filter-center img{
+   
+    margin-top: 14px;
+}
+.menu-icon, .profile-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    padding: 15px;
+}
+
+.logo {
+    height: 70px; /* Ajusta el tamaño del logo según sea necesario */
+    position: relative;
+    justify-content: center;
+    left: 100px;
+}
+
+.search-bar {
+ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    border-radius: 64px;
+    background-color: #f27958;
+    padding-left: 32px;
+  
+    width: 60%;
+  
+}
+
+.filter-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+
+
+
+}
+
+.filter-buttons button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.search-bar input {
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: none;
+    width: 150px;
+}
+
+
+
+.search-input{
+    display: none;
+}
+
+.search-cotainer{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
+}
+
+/* Títulos */
+main h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #3e4555;
+    padding: 0px 24px;
+}
+
+.fa-magnifying-glass{
+
+    color:black;
+    font-size: 18px;
+}
+
+
+.libros_filtro{
+
+  
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 0px 24px;
+    width: 100% ;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+/* Grilla de libros */
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 70px;
+    padding: 0px 24px;
+}
+
+.book-item {
+    text-align: center;
+}
+
+.book-item img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.book-item img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.book-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.book-genre {
+    font-size: 12px;
+    color: #777;
+}
+
+
+/* __________________________ */
+
+/* Icono de menú */
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    padding: 15px;
+}
+
+/* Panel de navegación */
+.side-nav {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Oculto inicialmente */
+    width: 300px;
+    height: 100%;
+    background-color: #f5f3e7;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    padding: 20px;
+    border-radius: 0 10px 10px 0;
+}
+
+.side-nav.open {
+    left: 0; /* Mostrar panel */
+}
+
+.profile-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+p {
+    color: #666;
+    font-size: 14px;
+}
+
+.nav-links {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.nav-links li {
+    font-size: 16px;
+    margin: 15px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.logout {
+    margin-top: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+
+/* __________________________ */
+
+main .filtro {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilo para el icono de filtro */
+.filter-icon {
+    font-size: 18px; /* Tamaño del icono */
+    /* Espacio entre el texto y el icono */
+    cursor: pointer;
+    color: #333;
+}
